@@ -1,0 +1,229 @@
+{
+    "first_trigger": "welcome_prompt",
+
+    "triggers":
+    {
+		"welcome_prompt":
+		{
+			"type": "prompt",
+			"size": [1280,720],
+
+			"actn": "trigger",
+			"args": "welcome_msg",
+
+			"frames":
+			[
+				{
+					"size": [1280, 720],
+
+					"image": "images/CHR/JUMPSHIP.bmp"
+				}
+			]
+		},
+
+        "welcome_msg":
+		{
+			"esc_enabled": false,
+
+			"type": "sub_prompt",
+			"size": 800,
+			
+			"actn": "remove_trigger",
+			"args": "welcome_prompt",
+
+			"texts":
+			[
+				{
+					"title": "BattleMercs Alpha Build (Jan 2023)"
+				},
+
+				{
+					"text": "\nWelcome to BattleMercs! A new tactical-based mech game that is currently in development. This demo is dummied up to look like the Crescent Hawks Inception and Revenge, as an homage to two of my favorite games and two games that are inspiring this project.\n\nIf you like this demo you can contact me via retroactiongames@gmail.com if you think you can help."
+				}
+			],
+
+			"options":
+			[
+				{
+					"text": "OK",
+					"actns":
+					[
+						{
+							"actn": "close_prompt",
+							"args": "all_sub_prompts"
+						},
+
+						{
+							"actn": "var",
+							"args": "money += 30000000"
+						},
+		
+						{
+							"actn": "add_to_list",
+							"args":
+							{
+								"list": "player_mechs",
+								"unit": "Thunderbolt"
+							}
+						},
+		
+						{
+							"actn": "add_to_list",
+							"args":
+							{
+								"list": "player_mechs",
+								"unit": "Orion"
+							}
+						},
+		
+						{
+							"actn": "add_to_list",
+							"args":
+							{
+								"list": "player_mechs",
+								"unit": "Marauder"
+							}
+						},
+		
+						{
+							"actn": "add_to_list",
+							"args":
+							{
+								"list": "player_mechs",
+								"unit": "Marauder"
+							}
+						},
+		
+		
+						{
+							"actn": "add_to_list",
+							"args":
+							{
+								"list": "player_mechs",
+								"unit": "Wolverine"
+							}
+						},
+		
+						{
+							"actn": "add_to_list",
+							"args":
+							{
+								"list": "player_mechs",
+								"unit": "Catapult"
+							}
+						},
+		
+						{
+							"actn": "add_to_list",
+							"args":
+							{
+								"list": "player_mechs",
+								"unit": "Trebuchet"
+							}
+						},
+		
+						{
+							"actn": "add_to_list",
+							"args":
+							{
+								"list": "player_mechs",
+								"unit": "Rifleman"
+							}
+						},
+		
+		
+						{
+							"actn": "add_to_list",
+							"args":
+							{
+								"list": "player_mechs",
+								"unit": "Valkyrie"
+							}
+						},
+		
+						{
+							"actn": "add_to_list",
+							"args":
+							{
+								"list": "player_mechs",
+								"unit": "Commando"
+							}
+						},
+		
+						{
+							"actn": "add_to_list",
+							"args":
+							{
+								"list": "player_mechs",
+								"unit": "Wasp"
+							}
+						},
+		
+						{
+							"actn": "add_to_list",
+							"args":
+							{
+								"list": "player_mechs",
+								"unit": "Jenner"
+							}
+						},
+						
+						{
+							"actn": "trigger",
+							"args": "background"
+						}
+					]
+				}
+			]
+		},
+
+		"background":
+		{
+			"type": "prompt",
+			"size": 800,
+
+			"actn": "remove_trigger",
+			"args": "background",
+
+			"text": "After the duel on Mallory's World, Morgan Kell became reticent and withdrawn, reducing the Hounds to a third of its strength and eventually retiring from the mercenary unit to join a monastery.\n\nAs Patrick Kell, his brother and now the commander of the remaining Kell Hounds, you must lead them through the lowest period of their history... A time called \"The Defection.\"",
+
+			"options":
+			[
+				{
+					"text": "OK",
+					"actns":
+					[
+						{
+							"actn": "close_prompt",
+							"args": "all_sub_prompts"
+						},
+
+						{
+							"actn": "trigger",
+							"args": "launch_career"
+						}
+					]
+				}
+			]
+		},
+
+		
+		"launch_career":
+		{
+			"type": "prompt",
+			"size": 800,
+
+			"actn": "remove_trigger",
+			"args": "launch_career",
+
+			"text": "Welcome to Robinson III!\n\nThe Kell Hounds have been reduced to a single company of 'Mechs and Mechwarriors, but they are all under your command now. Nearing the end of brief tour with the Federated Suns here on Robinson, you now control the Kell Hound's future...\n\nGood luck, Lt. Colonel Kell!",
+
+			"options":
+			[
+				{
+					"text": "OK"
+				}
+			]
+		}
+    }
+}

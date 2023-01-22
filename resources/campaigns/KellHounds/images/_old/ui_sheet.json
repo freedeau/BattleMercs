@@ -1,0 +1,309 @@
+{
+    "cursors":
+    {
+        "dark_green":
+        {
+            "frame": {"x": 568, "y": 0, "w": 10, "h": 14},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "light_green":
+        {
+            "frame": {"x": 578, "y": 0, "w": 10, "h": 14},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "red":
+        {
+            "frame": {"x": 588, "y": 0, "w": 10, "h": 14},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "move":
+        {
+            "frame": {"x": 480, "y": 0, "w": 22, "h": 22},
+            "n_frames": 4,
+            "alpha": [255,0,255]
+        },
+
+        "armor_drag":
+        {
+            "frame": {"x": 627, "y": 0, "w": 70, "h": 63},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "core_drag":
+        {
+            "frame": {"x": 699, "y": 0, "w": 80, "h": 76},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "internals_drag":
+        {
+            "frame": {"x": 781, "y": 0, "w": 79, "h": 75},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "weaps_drag":
+        {
+            "frame": {"x": 862, "y": 0, "w": 99, "h": 99},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        }
+    },
+
+    "general":
+    {
+        "target":
+        {
+            "frame": {"x": 480, "y": 22, "w": 22, "h": 22},
+            "n_frames": 5,
+            "alpha": [255,0,255]
+        },
+
+        "item_active":
+        {
+            "frame": {"x": 0, "y": 548, "w": 128, "h": 26},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "item_inactive":
+        {
+            "frame": {"x": 128, "y": 548, "w": 128, "h": 26},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        }
+    },
+
+    "toggles":
+    {
+        "toggle_active_green":
+        {
+            "frame": {"x": 120, "y": 80, "w": 120, "h": 40},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "toggle_active_red":
+        {
+            "frame": {"x": 240, "y": 80, "w": 120, "h": 40},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "toggle_inactive":
+        {
+            "frame": {"x": 120, "y": 120, "w": 120, "h": 40},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "toggle_target_active":
+        {
+            "frame": {"x": 120, "y": 160, "w": 164, "h": 34},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "toggle_target_targetting":
+        {
+            "frame": {"x": 120, "y": 194, "w": 164, "h": 34},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "toggle_target_inactive":
+        {
+            "frame": {"x": 120, "y": 228, "w": 164, "h": 34},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "toggle_target_inactive_targ":
+        {
+            "frame": {"x": 120, "y": 262, "w": 164, "h": 34},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        }
+    },
+
+    "battle":
+    {
+        "weapon_active_ammo":
+        {
+            "frame": {"x": 0, "y": 422, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "weapon_active_cooldown_ammo":
+        {
+            "frame": {"x": 120, "y": 422, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "weapon_reserved_ammo":
+        {
+            "frame": {"x": 0, "y": 464, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "weapon_reserved_cooldown_ammo":
+        {
+            "frame": {"x": 120, "y": 464, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "current_weapon_active_ammo":
+        {
+            "frame": {"x": 240, "y": 422, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "current_weapon_active_cooldown_ammo":
+        {
+            "frame": {"x": 360, "y": 422, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "current_weapon_reserved_ammo":
+        {
+            "frame": {"x": 240, "y": 464, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "current_weapon_reserved_cooldown_ammo":
+        {
+            "frame": {"x": 360, "y": 464, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "weapon_inactive_ammo":
+        {
+            "frame": {"x": 0, "y": 506, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "weapon_no_ammo_ammo":
+        {
+            "frame": {"x": 120, "y": 506, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "weapon_destroyed_ammo":
+        {
+            "frame": {"x": 240, "y": 506, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "weapon_none_ammo":
+        {
+            "frame": {"x": 360, "y": 506, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+
+
+        "weapon_active":
+        {
+            "frame": {"x": 0, "y": 296, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "weapon_active_cooldown":
+        {
+            "frame": {"x": 120, "y": 296, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "weapon_reserved":
+        {
+            "frame": {"x": 0, "y": 338, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "weapon_reserved_cooldown":
+        {
+            "frame": {"x": 120, "y": 338, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "current_weapon_active":
+        {
+            "frame": {"x": 240, "y": 296, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "current_weapon_active_cooldown":
+        {
+            "frame": {"x": 360, "y": 296, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "current_weapon_reserved":
+        {
+            "frame": {"x": 240, "y": 338, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "current_weapon_reserved_cooldown":
+        {
+            "frame": {"x": 360, "y": 338, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "weapon_inactive":
+        {
+            "frame": {"x": 0, "y": 380, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "weapon_no_ammo":
+        {
+            "frame": {"x": 120, "y": 380, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "weapon_destroyed":
+        {
+            "frame": {"x": 240, "y": 380, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        },
+
+        "weapon_none":
+        {
+            "frame": {"x": 360, "y": 380, "w": 120, "h": 42},
+            "n_frames": 1,
+            "alpha": [255,0,255]
+        }
+    }
+}

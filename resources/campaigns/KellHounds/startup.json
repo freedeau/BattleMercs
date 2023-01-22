@@ -1,0 +1,521 @@
+{
+    "name": "The Kell Hounds Defection",
+    "desc": "As Patrick Kell, lead the remaining Kell Hounds through the lowest period of their history, a time called \"The Defection.\"",
+    "splash": "images/splash.png",
+
+    "first_trigger": "startup",
+
+    "triggers":
+    {
+        "startup":
+        {
+            "actns":
+            [
+                {
+                    "actn": "file_var",
+                    "args": "data/paint_palette.json"
+                },
+                
+                {
+                    "actn": "battle_unit_selection_file",
+                    "args": "scripts/frames/battle_unit_selection.json"
+                },
+                
+                {
+                    "actn": "battle_enemy_selection_file",
+                    "args": "scripts/frames/battle_enemy_selection.json"
+                },
+                
+                {
+                    "actn": "battle_status_bar_file",
+                    "args": "scripts/frames/battle_status_bar.json"
+                },
+                
+                {
+                    "actn": "rpg_status_bar_file",
+                    "args": "scripts/frames/rpg_status_bar.json"
+                },
+                
+                {
+                    "actn": "set_star_map_file",
+                    "args": "data/star_map_3025.json"
+                },
+
+                {
+                    "actn": "set_goods",
+                    "args":
+                    {
+                        "file": "data/goods.json",
+                        "update_time": 30
+                    }
+                },
+
+                {
+                    "actn": "set_planet",
+                    "args": "Robinson"
+                },
+
+                {
+                    "actn": "var",
+                    "args": "money = 0"
+                },
+
+                {
+                    "actn": "update_game_date",
+                    "args":
+                    {
+                        "set":
+                        {
+                            "day": 1,
+                            "month": "January",
+                            "year": 3026
+                        }
+                    }
+                },
+
+                {
+                    "actn": "on_date_change",
+                    "args": "update_star_map"
+                },
+
+                {
+                    "actn": "new_list",
+                    "args": 
+                    {
+                        "name": "player_crew",
+                        "persistent": "true"
+                    }
+                },
+
+                {
+                    "actn": "new_list",
+                    "args": 
+                    {
+                        "name": "player_mechs",
+                        "persistent": "true"
+                    }
+                },
+
+                {
+                    "actn": "new_list",
+                    "args": 
+                    {
+                        "name": "player_tech",
+                        "persistent": "true"
+                    }
+                },
+
+                {
+                    "actn": "add_to_list",
+                    "args": 
+                    {
+                        "list": "player_crew",
+                        "type": "crew",
+
+                        "first_name": "Patrick",
+                        "last_name": "Kell",
+                        "nick_name": "",
+                        "gender": "male",
+                        "portrait": ["special", 9],
+
+                        "max_health": 5,
+
+                        "is_player": true,
+                        "can_fire": false,
+
+                        "skills":
+                        [
+                            {
+                                "name": "Piloting",
+                                "level": 7
+                            },
+
+                            {
+                                "name": "Gunnery",
+                                "level": 8
+                            }
+                        ]       
+                    }
+                },
+
+                {
+                    "actn": "add_to_list",
+                    "args": 
+                    {
+                        "list": "player_crew",
+                        "type": "crew",
+
+                        "first_name": "Anne",
+                        "last_name": "Finn",
+                        "nick_name": "",
+                        "gender": "female",
+                        "portrait": ["females", 3],
+
+                        "max_health": 4,
+
+                        "is_player": false,
+                        "can_fire": true,
+
+                        "skills":
+                        [
+                            {
+                                "name": "Piloting",
+                                "level": 6
+                            },
+
+                            {
+                                "name": "Gunnery",
+                                "level": 6
+                            }
+                        ]       
+                    }
+                },
+
+                {
+                    "actn": "add_to_list",
+                    "args": 
+                    {
+                        "list": "player_crew",
+                        "type": "crew",
+
+                        "first_name": "Clarence",
+                        "last_name": "Wilson",
+                        "nick_name": "Cat",
+                        "gender": "male",
+                        "portrait": ["males", 3],
+
+                        "max_health": 6,
+
+                        "is_player": false,
+                        "can_fire": true,
+
+                        "skills":
+                        [
+                            {
+                                "name": "Piloting",
+                                "level": 7
+                            },
+
+                            {
+                                "name": "Gunnery",
+                                "level": 8
+                            }
+                        ]       
+                    }
+                },
+
+                {
+                    "actn": "add_to_list",
+                    "args": 
+                    {
+                        "list": "player_crew",
+                        "type": "crew",
+
+                        "first_name": "Bethany",
+                        "last_name": "Connor",
+                        "nick_name": "",
+                        "gender": "female",
+                        "portrait": ["females", 3],
+
+                        "max_health": 3,
+
+                        "is_player": false,
+                        "can_fire": true,
+
+                        "skills":
+                        [
+                            {
+                                "name": "Piloting",
+                                "level": 3
+                            },
+
+                            {
+                                "name": "Gunnery",
+                                "level": 4
+                            }
+                        ]       
+                    }
+                },
+
+                {
+                    "actn": "add_to_list",
+                    "args": 
+                    {
+                        "list": "player_crew",
+                        "type": "crew",
+
+                        "first_name": "Salome",
+                        "last_name": "Ward",
+                        "nick_name": "",
+                        "gender": "female",
+                        "portrait": ["special", 5],
+
+                        "max_health": 4,
+
+                        "is_player": false,
+                        "can_fire": true,
+
+                        "skills":
+                        [
+                            {
+                                "name": "Piloting",
+                                "level": 6
+                            },
+
+                            {
+                                "name": "Gunnery",
+                                "level": 7
+                            }
+                        ]       
+                    }
+                },
+
+                {
+                    "actn": "add_to_list",
+                    "args": 
+                    {
+                        "list": "player_crew",
+                        "type": "crew",
+
+                        "first_name": "Mike",
+                        "last_name": "Fitzhugh",
+                        "nick_name": "",
+                        "gender": "male",
+                        "portrait": ["males", 4],
+
+                        "max_health": 5,
+
+                        "is_player": false,
+                        "can_fire": true,
+
+                        "skills":
+                        [
+                            {
+                                "name": "Piloting",
+                                "level": 6
+                            },
+
+                            {
+                                "name": "Gunnery",
+                                "level": 6
+                            }
+                        ]       
+                    }
+                },
+
+                {
+                    "actn": "add_to_list",
+                    "args": 
+                    {
+                        "list": "player_crew",
+                        "type": "crew",
+
+                        "first_name": "Diane",
+                        "last_name": "McWilliams",
+                        "nick_name": "",
+                        "gender": "female",
+                        "portrait": ["females", 0],
+
+                        "max_health": 4,
+
+                        "is_player": false,
+                        "can_fire": true,
+
+                        "skills":
+                        [
+                            {
+                                "name": "Piloting",
+                                "level": 6
+                            },
+
+                            {
+                                "name": "Gunnery",
+                                "level": 6
+                            }
+                        ]       
+                    }
+                },
+
+                {
+                    "actn": "add_to_list",
+                    "args": 
+                    {
+                        "list": "player_crew",
+                        "type": "crew",
+
+                        "first_name": "Mary",
+                        "last_name": "Lasker",
+                        "nick_name": "",
+                        "gender": "female",
+                        "portrait": ["females", 1],
+
+                        "max_health": 3,
+
+                        "is_player": false,
+                        "can_fire": true,
+
+                        "skills":
+                        [
+                            {
+                                "name": "Piloting",
+                                "level": 3
+                            },
+
+                            {
+                                "name": "Gunnery",
+                                "level": 4
+                            }
+                        ]       
+                    }
+                }
+
+                ,
+
+                {
+                    "actn": "add_to_list",
+                    "args": 
+                    {
+                        "list": "player_crew",
+                        "type": "crew",
+
+                        "first_name": "Daniel",
+                        "last_name": "Allard",
+                        "nick_name": "Dan",
+                        "gender": "male",
+                        "portrait": ["males", 8],
+
+                        "max_health": 5,
+
+                        "is_player": false,
+                        "can_fire": true,
+
+                        "skills":
+                        [
+                            {
+                                "name": "Piloting",
+                                "level": 5
+                            },
+
+                            {
+                                "name": "Gunnery",
+                                "level": 6
+                            }
+                        ]       
+                    }
+                },
+
+                {
+                    "actn": "add_to_list",
+                    "args": 
+                    {
+                        "list": "player_crew",
+                        "type": "crew",
+
+                        "first_name": "Austin",
+                        "last_name": "Brand",
+                        "nick_name": "",
+                        "gender": "male",
+                        "portrait": ["males", 6],
+
+                        "max_health": 4,
+
+                        "is_player": false,
+                        "can_fire": true,
+
+                        "skills":
+                        [
+                            {
+                                "name": "Piloting",
+                                "level": 4
+                            },
+
+                            {
+                                "name": "Gunnery",
+                                "level": 4
+                            }
+                        ]       
+                    }
+                },
+
+                {
+                    "actn": "add_to_list",
+                    "args": 
+                    {
+                        "list": "player_crew",
+                        "type": "crew",
+
+                        "first_name": "Margaret",
+                        "last_name": "Lang",
+                        "nick_name": "Meg",
+                        "gender": "female",
+                        "portrait": ["special", 4],
+
+                        "max_health": 3,
+
+                        "is_player": false,
+                        "can_fire": true,
+
+                        "skills":
+                        [
+                            {
+                                "name": "Piloting",
+                                "level": 3
+                            },
+
+                            {
+                                "name": "Gunnery",
+                                "level": 3
+                            }
+                        ]       
+                    }
+                },
+
+                {
+                    "actn": "add_to_list",
+                    "args": 
+                    {
+                        "list": "player_crew",
+                        "type": "crew",
+
+                        "first_name": "Eddie",
+                        "last_name": "Baker",
+                        "nick_name": "",
+                        "gender": "male",
+                        "portrait": ["special", 2],
+
+                        "max_health": 4,
+
+                        "is_player": false,
+                        "can_fire": true,
+
+                        "skills":
+                        [
+                            {
+                                "name": "Piloting",
+                                "level": 3
+                            },
+
+                            {
+                                "name": "Gunnery",
+                                "level": 3
+                            }
+                        ]       
+                    }
+                },
+
+                {
+                    "actn": "new_rpg",
+                    "args": 
+                    {
+                        "map": "maps/planets/small_temperate.tmx",
+                        "script": "maps/planets/capital_planet_rpg.json",
+                        "mods":
+                        [
+                            "welcome.json"
+                        ]
+                    }
+                }
+            ]           
+        }
+    }
+}
